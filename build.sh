@@ -5,7 +5,7 @@ ROOT="$(cd "$(dirname "$0")" && pwd)"
 
 # ---- Config ----
 CRATE_NAME="mobile"
-IOS_DIR="$ROOT/ios"
+IOS_DIR="$ROOT/uniffi-test"
 XCODE_SWIFT_DEST="$IOS_DIR/Mobile.swift"
 XCODE_XCFRAMEWORK_DEST="$IOS_DIR/Mobile.xcframework"
 
@@ -39,6 +39,7 @@ cp "$BINDINGS_DIR/mobileFFI.modulemap" "$HEADERS_DIR/module.modulemap"
 
 # ---- 4) Build iOS static libs (device + simulator) ----
 for TARGET in aarch64-apple-ios aarch64-apple-ios-sim; do
+  rustup target add "$TARGET"
   cargo build --release --target="$TARGET"
 done
 

@@ -6,23 +6,29 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DE6BE7C92F300249000C2036 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6BE7C42F300249000C2036 /* ContentView.swift */; };
+		DE6BE7CB2F300249000C2036 /* uniffi_testApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6BE7C72F300249000C2036 /* uniffi_testApp.swift */; };
+		DE6BE7CC2F300249000C2036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE6BE7C32F300249000C2036 /* Assets.xcassets */; };
+		DE6BE7CF2F300524000C2036 /* Mobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6BE7CE2F300524000C2036 /* Mobile.xcframework */; };
+		DE6BE7D02F300524000C2036 /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6BE7CD2F300524000C2036 /* Mobile.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		DE5BC8142F2E1B8A00D6B2A5 /* uniffi-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "uniffi-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE6BE7C32F300249000C2036 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE6BE7C42F300249000C2036 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DE6BE7C72F300249000C2036 /* uniffi_testApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uniffi_testApp.swift; sourceTree = "<group>"; };
+		DE6BE7CD2F300524000C2036 /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
+		DE6BE7CE2F300524000C2036 /* Mobile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Mobile.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		DE5BC8162F2E1B8A00D6B2A5 /* uniffi-test */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "uniffi-test";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DE5BC8112F2E1B8A00D6B2A5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE6BE7CF2F300524000C2036 /* Mobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,8 +38,12 @@
 		DE5BC80B2F2E1B8A00D6B2A5 = {
 			isa = PBXGroup;
 			children = (
-				DE5BC8162F2E1B8A00D6B2A5 /* uniffi-test */,
+				DE6BE7CD2F300524000C2036 /* Mobile.swift */,
+				DE6BE7CE2F300524000C2036 /* Mobile.xcframework */,
 				DE5BC8152F2E1B8A00D6B2A5 /* Products */,
+				DE6BE7C32F300249000C2036 /* Assets.xcassets */,
+				DE6BE7C42F300249000C2036 /* ContentView.swift */,
+				DE6BE7C72F300249000C2036 /* uniffi_testApp.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,9 +69,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				DE5BC8162F2E1B8A00D6B2A5 /* uniffi-test */,
 			);
 			name = "uniffi-test";
 			packageProductDependencies = (
@@ -109,6 +116,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE6BE7CC2F300249000C2036 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +127,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE6BE7D02F300524000C2036 /* Mobile.swift in Sources */,
+				DE6BE7C92F300249000C2036 /* ContentView.swift in Sources */,
+				DE6BE7CB2F300249000C2036 /* uniffi_testApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
