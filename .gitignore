@@ -1,0 +1,26 @@
+
+# Rust library
+/target
+
+Cargo.lock
+
+# Uniffi stuff
+bindings/
+ios-headers/
+
+# Xcodegen stuff
+Mobile.xcframework/
+
+# Xcode user state
+ios/**/xcuserdata/
+ios/**/*.xcuserstate
+DerivedData/
+**/xcuserdata/
+**/*.xcuserstate
+
+
+# macos being macos
+.DS_Store
+
+.idea
+.vscode

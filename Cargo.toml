@@ -1,0 +1,16 @@
+[package]
+name = "mobile"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "mobile"
+crate-type = ["cdylib", "staticlib"]
+
+[dependencies]
+uniffi = { version = "0.25.3", features = ["cli"] }
+
+[build-dependencies]
+uniffi = { version = "0.25.3", features = ["cli"] }
+
+
